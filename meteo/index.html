@@ -1,15 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Recherche de Villes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/data/css/style.css">
+    <title>Te Vea</title>
 </head>
+
 <body>
-  <h1>Recherche de Villes</h1>
-  <label for="ville">Entrez le nom de la ville : </label>
-  <input type="text" id="ville" placeholder="Saisissez une ville">
-  <button id="search-button">Rechercher</button>
-  <div id="city-list">Les résultats apparaîtront ici.</div>
-  <div id="forecast"></div>
-  <script src="/srcipt.js"></script>
+    <header>
+        <div class="top">
+            <h1>Météo</h1>
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <div class="search">
+                <div class="search-lab">
+                    <label for="ville">Entrez le nom d'une ville : </label>
+                </div>
+                <div class="search-input">
+                    <input type="text" id="ville" placeholder="Saisissez une ville">
+                </div>
+                <div class="search-button">
+                    <button id="search-button">Afficher</button>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="ville">
+                    <div class="list">
+                        <ul id="city-list"></ul>
+                    </div>
+                </div>
+                <div class="infos">
+                    <div class="forecast">
+                        <ul id="forecast"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+
+    </footer>
+    <script src="codeWeather.js"></script>
+    <script src="srcipt.js"></script>
 </body>
+
 </html>

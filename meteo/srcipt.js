@@ -11,7 +11,7 @@ searchButton.addEventListener('click', () => {
     .then(response => response.json())
     .then(data => {
       const cities = data.cities;
-      if(cities.length>0){
+      if (cities.length > 0) {
         cityListElement.innerHTML = `<li>${cities[0].name} (${cities[0].insee.slice(0, 2)})</li>`
       }
       // Assuming you want to display the temperature for the first city in the list
@@ -31,10 +31,13 @@ function displayTemperature(inseeCode) {
   fetch(`https://api.meteo-concept.com/api/forecast/daily/0?token=${token}&insee=${inseeCode}`)
     .then(response => response.json())
     .then(data => {
-      const temperature = data.forecast.tmax;      
-      forecastElement.innerHTML = `The maximum temperature for today is ${temperature}°C`;
+      const tempMax = data.forecast.tmax;
+      const tempMin = data.forecast.tmin;
+      const codeWeather = data.forecast.weather;
+      forecastElement.innerHTML = `<li>${conditionsMeteo[codeWeather]}</li>`;
+      forecastElement.innerHTML += `<li>Température : ${tempMin}°/${tempMax}°</li>`;
     })
     .catch(error => {
-      forecastElement.innerHTML = `An error occurred: ${error}`;
+      forecastElement.innerHTML = `An error occurred: ${error} `;
     });
 }

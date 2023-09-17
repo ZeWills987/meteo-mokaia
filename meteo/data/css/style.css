@@ -1,0 +1,153 @@
+* {
+    font-size: 1.2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 10px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153, 153, 153);
+}
+
+header .top {
+    padding: 10px;
+    width: 50%;
+    height: max-content;
+}
+
+header .top h1 {
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    font-size: 1.8rem;
+}
+
+article {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    /* Cela permettra à l'élément article de s'étendre pour remplir la hauteur restante du corps */
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    background-color: rgb(199, 199, 199);
+}
+
+.container {
+    margin: 50px auto;
+    padding: 10px;
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.container .search {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .search div {
+    margin: 10px 0 10px 0;
+}
+
+.container .search .search-lab {}
+
+.container .search .search-input input {
+    padding: 10px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(199, 199, 199);
+    outline: 0;
+    border: none;
+}
+
+.container .search .search-button button {
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgb(199, 199, 199);
+    font-size: 1rem;
+    transition: 0.2S;
+}
+
+.container .search .search-button button:hover {
+    color: #282828;
+    transition: 0.1s;
+}
+
+.container .main-content {
+    margin: 20px 0 0 0;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .main-content .ville {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main-content .ville ul#city-list {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main-content .ville ul#city-list {
+    padding: 0;
+}
+
+.container .main-content .ville ul#city-list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container .main-content .infos {
+    height: max-content;
+}
+
+.container .main-content .infos .forecast {
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main-content .infos .forecast ul {
+    padding: 0;
+    height: max-content;
+}
+
+.container .main-content .infos .forecast ul li {
+    margin: 10px 0 0 0;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
