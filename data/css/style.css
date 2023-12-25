@@ -7,10 +7,6 @@
     html body {
         height: 100%;
     }
-
-    .background {
-        height: ;
-    }
 }
 
 body {
@@ -107,7 +103,7 @@ main article .top>div .title {
 }
 
 .city .icon {
-    width: 40px;
+    width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,7 +198,7 @@ article>.vector-horiz {
 
 .bottom>div {
     margin: 20px 0 0 0;
-    width: 90%;
+    width: 95%;
     height: max-content;
     display: flex;
     flex-direction: row;
@@ -229,17 +225,22 @@ article>.vector-horiz {
 
 footer {
     padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer ul {
     margin: 0;
     padding: 0;
+    width: 95%;
     display: flex;
 }
 
 footer ul li {
     flex: 1;
     list-style: none;
+    font-size: 3.1vw;
 }
 
 footer ul li:nth-child(2) {
