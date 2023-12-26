@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/data/img/meteo_mokaia_logo.png" />
+    <link rel="icon" type="image/x-icon" href="/data/img/logo/meteo_mokaia_logo.png" />
     <link rel="stylesheet" href="/data/css/style.css">
     <title>Météo Mokaia</title>
 </head>
@@ -23,25 +23,26 @@
             <article>
                 <div class="top">
                     <div class="search_bar">
-                        <input type="search" placeholder="Rechercher une ville">
+                        <input type="text" placeholder="Rechercher une ville" id="search-input">
+                        <button id="show">Afficher</button>
                     </div>
                     <div class="city">
                         <div class="icon">
                             <img src="/data/img/pointeur-de-localisation.png" alt="Icone localisation">
                         </div>
                         <div class="title">
-                            <h1>...</h1>
+                            <h1 id="ville">Ville</h1>
                         </div>
                     </div>
                     <div class="temp">
-                        <h1>...°</h1>
+                        <h1 id="temperature"></h1>
                     </div>
                     <div class="weather">
                         <div class="title">
-                            <h2>...</h2>
+                            <h2 id="weather">Averse</h2>
                         </div>
                         <div class="icon">
-                            <img src="/data/img/weather_icon/temps-nuageux.png" alt="Temps nuageux">
+                            <img src="/data/img/weather_icon/pluie.gif" alt="Pluie">
                         </div>
                     </div>
                 </div>
@@ -52,16 +53,16 @@
                             <h3>Vitesse du vent</h3>
                         </div>
                         <div class="value">
-                            <p>... km/h</p>
+                            <p id="wind"></p>
                         </div>
                     </div>
                     <div class="vector-vertic"></div>
                     <div class="col-mid">
                         <div class="title">
-                            <h3>Température</h3>
+                            <h3>Humidité</h3>
                         </div>
                         <div class="value">
-                            <p>...°/...°</p>
+                            <p id="humidite"></p>
                         </div>
                     </div>
                     <div class="vector-vertic"></div>
@@ -70,125 +71,15 @@
                             <h3>Probabilité (pluie)</h3>
                         </div>
                         <div class="value">
-                            <p>...%</p>
+                            <p id="rain"></p>
                         </div>
                     </div>
                 </div>
                 <div class="vector-horiz"></div>
                 <div class="bottom">
-                    <div class="row_hours">
-                        <div class="col-hours">
-                            <div class="hours">
-                                <h3>0H</h3>
-                            </div>
-                            <div class="temp">
-                                <h3>...°/...°</h3>
-                            </div>
-                            <div class="weather">
-                                <h3>...</h3>
-                            </div>
-                        </div>
-                        <div class="col-hours">
-                            <div class="hours">
-                                <h3>0H</h3>
-                            </div>
-                            <div class="temp">
-                                <h3>...°/...°</h3>
-                            </div>
-                            <div class="weather">
-                                <h3>...</h3>
-                            </div>
-                        </div>
-                        <div class="col-hours">
-                            <div class="hours">
-                                <h3>0H</h3>
-                            </div>
-                            <div class="temp">
-                                <h3>...°/...°</h3>
-                            </div>
-                            <div class="weather">
-                                <h3>...</h3>
-                            </div>
-                        </div>
-                        <div class="col-hours">
-                            <div class="hours">
-                                <h3>0H</h3>
-                            </div>
-                            <div class="temp">
-                                <h3>...°/...°</h3>
-                            </div>
-                            <div class="weather">
-                                <h3>...</h3>
-                            </div>
-                        </div>
-                        <div class="col-hours">
-                            <div class="hours">
-                                <h3>0H</h3>
-                            </div>
-                            <div class="temp">
-                                <h3>...°/...°</h3>
-                            </div>
-                            <div class="weather">
-                                <h3>...</h3>
-                            </div>
-                        </div>
+                    <div class="row_hours" id="row-hours">
                     </div>
-                    <div class="row_days">
-                        <div class="col-days">
-                            <div class="days">
-                                <h3>0H</h3>
-                            </div>
-                            <div class="temp">
-                                <h3>...°/...°</h3>
-                            </div>
-                            <div class="weather">
-                                <h3>...</h3>
-                            </div>
-                        </div>
-                        <div class="col-days">
-                            <div class="days">
-                                <h3>0H</h3>
-                            </div>
-                            <div class="temp">
-                                <h3>...°/...°</h3>
-                            </div>
-                            <div class="weather">
-                                <h3>...</h3>
-                            </div>
-                        </div>
-                        <div class="col-days">
-                            <div class="days">
-                                <h3>0H</h3>
-                            </div>
-                            <div class="temp">
-                                <h3>...°/...°</h3>
-                            </div>
-                            <div class="weather">
-                                <h3>...</h3>
-                            </div>
-                        </div>
-                        <div class="col-days">
-                            <div class="days">
-                                <h3>0H</h3>
-                            </div>
-                            <div class="temp">
-                                <h3>...°/...°</h3>
-                            </div>
-                            <div class="weather">
-                                <h3>...</h3>
-                            </div>
-                        </div>
-                        <div class="col-days">
-                            <div class="days">
-                                <h3>0H</h3>
-                            </div>
-                            <div class="temp">
-                                <h3>...°/...°</h3>
-                            </div>
-                            <div class="weather">
-                                <h3>...</h3>
-                            </div>
-                        </div>
+                    <div class="row_days" id="days">
                     </div>
                 </div>
             </article>
@@ -196,11 +87,11 @@
         <footer>
             <ul>
                 <li>By <a href="https://william-tchang.fr">Tchang William</a></li>
-                <li>dernière mis à jour le ../../..</li>
+                <li id="update"></li>
             </ul>
         </footer>
     </div>
-
+    <script src="/data/js/weather_code.js"></script>
     <script src="/data/js/weather.js"></script>
 </body>
 
