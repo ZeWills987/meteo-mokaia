@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="data/img/logo/meteo_mokaia_logo.png" />
+    <link rel="stylesheet" href="/data/css/style.css">
+    <title>Météo Mokaia</title>
+</head>
+
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <img src="/data/img/logo/meteo_mokaia_logo.png" alt="Logo Météo Mokaia">
+            </div>
+            <div class="title">
+                <h1>Météo Mokaia</h1>
+            </div>
+        </header>
+        <main>
+            <article>
+                <div class="top">
+                    <div class="search_bar">
+                        <input type="text" placeholder="Rechercher une ville" id="search-input">
+                        <button id="show">Afficher</button>
+                    </div>
+                    <div class="city">
+                        <div class="icon">
+                            <img src="/data/img/pointeur-de-localisation.png" alt="Icone localisation">
+                        </div>
+                        <div class="title">
+                            <h1 id="ville">Ville</h1>
+                        </div>
+                    </div>
+                    <div class="temp">
+                        <h1 id="temperature">...°</h1>
+                    </div>
+                    <div class="weather">
+                        <div class="title">
+                            <h2 id="weather">Météo</h2>
+                        </div>
+                        <div class="icon" id="main-icon">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="vector-horiz"></div>
+                <div class="middle">
+                    <div class="col-mid">
+                        <div class="title">
+                            <h3>Vitesse du vent</h3>
+                        </div>
+                        <div class="value">
+                            <p id="wind"></p>
+                        </div>
+                    </div>
+                    <div class="vector-vertic"></div>
+                    <div class="col-mid">
+                        <div class="title">
+                            <h3>Humidité</h3>
+                        </div>
+                        <div class="value">
+                            <p id="humidite"></p>
+                        </div>
+                    </div>
+                    <div class="vector-vertic"></div>
+                    <div class="col-mid">
+                        <div class="title">
+                            <h3>Probabilité (pluie)</h3>
+                        </div>
+                        <div class="value">
+                            <p id="rain"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vector-horiz"></div>
+                <div class="bottom">
+                    <div class="row_hours" id="row-hours">
+                    </div>
+                    <div class="row_days" id="days">
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <ul>
+                <li>By <a href="https://william-tchang.fr">Tchang William</a></li>
+                <li id="update"></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="/data/js/weather_code.js"></script>
+    <script src="/data/js/weather.js"></script>
+</body>
+
+</html>
