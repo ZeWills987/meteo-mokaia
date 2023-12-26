@@ -89,4 +89,23 @@ const conditionsMeteo = {
     235: 'Averses de grêle'
 };
 
+groupesMeteo = {
+    "soleil": [0],
+    "nuages": [1, 2, 3, 4, 5],
+    "brouillard": [6, 7],
+    "bruine": [16],
+    "pluie": [10, 11, 12, 13, 14, 15, 40, 41, 42, 43, 44, 45, 46, 47, 48, 211, 212, 210],
+    "neige": [60, 61, 62, 63, 64, 65, 66, 67, 68, 70, 71, 72, 73, 74, 75, 76, 77, 78, 220, 221, 230, 231, 232],
+    "orage": [100, 101, 102, 103, 104, 105, 106, 107, 108, 120, 121, 121, 123, 124, 125, 126, 127, 128,
+        130, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 142],
+    "grele": [235]
+};
 
+function getGroupe(conditionsCode) {
+    for (const groupe in groupesMeteo) {
+        if (groupesMeteo[groupe].include(conditionsCode)) {
+            return groupe;
+        }
+    }
+    return 'Inconnu';
+}

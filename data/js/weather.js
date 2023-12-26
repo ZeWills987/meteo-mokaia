@@ -39,14 +39,16 @@ function displayTemperature(inseeCode) {
     fetch(`https://api.meteo-concept.com/api/forecast/nextHours?token=${token}&insee=${inseeCode}&hourly=true&world=true`)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
-            up.innerHTML = `${data.update.slice(8, 10)}/${data.update.slice(5, 7)}/${data.update.slice(0, 4)}`;
+            const g_meteo =
+                up.innerHTML = `${data.update.slice(8, 10)}/${data.update.slice(5, 7)}/${data.update.slice(0, 4)}`;
             const codeWeather = data.forecast[0].weather;
             weather.innerHTML = `${conditionsMeteo[codeWeather]}`;
-            temp.innerHTML += `${data.forecast[0].temp2m}°`;
+            weather_icon = `<img src='/data/img/weather_icon/${getGroupe(codeWeather)}.gif'>`
+            temp.innerHTML = `${data.forecast[0].temp2m}°`;
             wind.innerHTML = `${data.forecast[0].wind10m}km/h`;
             humidite.innerHTML = `${data.forecast[0].rh2m}%`;
             rain.innerHTML = `${data.forecast[0].probarain}%`;
+            hours.innerHTML = ``;
             for (var i = 1; i <= 5; i++) {
                 hours.innerHTML +=
                     `<div class="col-hours">
@@ -68,7 +70,7 @@ function displayTemperature(inseeCode) {
     fetch(`https://api.meteo-concept.com/api/forecast/daily?token=${token}&insee=${inseeCode}&world=true`)
         .then(response => response.json())
         .then(data => {
-
+            days.innerHTML = ``;
             var jours = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
             for (var i = 1; i <= 5; i++) {
                 var maDate = new Date(data.forecast[i].datetime);
