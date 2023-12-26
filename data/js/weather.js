@@ -1,4 +1,4 @@
-const token = '121ac8393d56134e64b1bbf02397a447e7d2c2d6611b17f1f8b129f2c9ad36a5'; // Replace with your API token
+const token = 'api key'; // Replace with your API token
 
 const searchButton = document.getElementById('show');
 const temp = document.getElementById('temperature');
