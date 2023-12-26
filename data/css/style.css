@@ -9,6 +9,22 @@
     }
 }
 
+@media screen and (min-height:891px) and (max-height:1000px) {
+    html body {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:891px) {
+    html body {
+        height: 100%;
+    }
+}
+
+html {
+    height: 100vh;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -221,13 +237,14 @@ article>.vector-horiz {
 
 .bottom>div {
     margin: 20px 0 0 0;
+    padding: 0 0 10px 0;
     width: 95%;
     height: max-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #3c3c3cb3;
+    background-color: #fff;
     border-radius: 5px;
 }
 
@@ -235,9 +252,16 @@ article>.vector-horiz {
     flex: 1;
 }
 
-.bottom>div>div h3 {
-    font-size: 2.5vw;
+.bottom>div>div h3,
+.bottom>div>div h3 strong {
+    font-size: 3.1vw;
     font-weight: 600;
+    color: #000;
+}
+
+.bottom>div>div h3 strong {
+    font-size: 3.3vw;
+    font-weight: bold;
 }
 
 .bottom>div>div>div {
@@ -245,6 +269,11 @@ article>.vector-horiz {
     justify-content: center;
     align-items: center;
 }
+
+.bottom>div>div>div>img {
+    width: 30px;
+}
+
 
 footer {
     padding: 10px 0;

@@ -101,11 +101,4 @@ groupesMeteo = {
     "grele": [235]
 };
 
-function getGroupe(conditionsCode) {
-    for (const groupe in groupesMeteo) {
-        if (groupesMeteo[groupe].include(conditionsCode)) {
-            return groupe;
-        }
-    }
-    return 'Inconnu';
-}
+
