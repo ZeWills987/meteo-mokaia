@@ -1,35 +1,34 @@
-# William Tchang Portfolio
+Ce dépôt contient le code source de Météo Mokaia, une application web permettant de consulter les informations météorologiques d'une ville. L'application utilise l'API de prévisions météorologiques pour afficher des données en temps réel.
+Structure du Projet
 
-Bienvenue sur mon portfolio en ligne. Ce dépôt contient le code source de mon site web personnel de William Tchang, mettant en valeur mon parcours, mes compétences et mes projets. Vous pouvez explorer le site à l'adresse [william-tchang.fr](https://william-tchang.fr).
+    /data: Ce répertoire contient les données statiques de l'application, telles que les fichiers CSS, JavaScript, et les images.
+        /data/css: Stylesheets de l'application.
+        /data/img: Images utilisées dans l'application.
+        /data/js: Scripts JavaScript utilisés pour interagir avec l'API météo.
 
-## Structure du Projet
+Utilisation
 
-Le projet est structuré de la manière suivante :
+    Clonez ce dépôt sur votre machine locale.
 
-- **`/data`**: Ce répertoire contient les données statiques du site, telles que les fichiers CSS, JavaScript, les images, et le CV au format PDF.
-  - **`/data/css`**: Stylesheets du site.
-  - **`/data/img`**: Images utilisées sur le site, y compris le logo, les icônes et les images de projet.
-  - **`/data/js`**: Scripts JavaScript utilisés sur le site.
-  - **`/data/pdf`**: Contient le CV au format PDF.
+    bash
 
-## Utilisation
+    git clone https://github.com/VOTRE-UTILISATEUR/meteo-mokaia.git
 
-1. Clonez ce dépôt sur votre machine locale.
-   ```bash
-   git clone https://github.com/VOTRE-UTILISATEUR/william-tchang-portfolio.git
-   ```
+    Ouvrez le fichier index.html dans votre navigateur pour lancer l'application.
 
-    Ouvrez le fichier index.html dans votre navigateur pour visualiser le site localement.
+Fonctionnalités
+
+    Recherche de Ville: Saisissez le nom d'une ville dans la barre de recherche et appuyez sur le bouton "Afficher" pour obtenir les informations météorologiques.
+
+    Affichage des Informations: Les informations affichées comprennent la température, la météo actuelle, la vitesse du vent, l'humidité, la probabilité de pluie, et des prévisions horaires et journalières.
 
 Auteur
 
-    William Tchang
-    william.tchang.pro@gmail.com
-    LinkedIn william-tchang-429103291
-    Mobile: 07.89.08.68.35
+    Tchang William
+    Site personnel
 
 Licence
 
 Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
 
-© 2023 par William Tchang. Tous droits réservés.
+© 2023 par Tchang William. Tous droits réservés.
