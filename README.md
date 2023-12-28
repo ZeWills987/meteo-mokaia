@@ -21,13 +21,14 @@ Le projet est structuré de la manière suivante :
 
     Ouvrez le fichier index.html dans votre navigateur pour visualiser le site localement.
 
-Auteur 
-  William Tchang
-  william.tchang.pro@gmail.com
-  [LinkedIn](https://www.linkedin.com/in/william-tchang-429103291/).
-  Mobile: 07.89.08.68.35
+Auteur
 
-Licence 
+    William Tchang
+    william.tchang.pro@gmail.com
+    LinkedIn
+    Mobile: 07.89.08.68.35
+
+Licence
 
 Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
 
