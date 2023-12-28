@@ -25,7 +25,7 @@ Auteur
 
     William Tchang
     william.tchang.pro@gmail.com
-    LinkedIn  [https://www.linkedin.com/in/william-tchang-429103291/](https://www.linkedin.com/in/william-tchang-429103291/).
+    [LinkedIn](https://www.linkedin.com/in/william-tchang-429103291/).
     Mobile: 07.89.08.68.35
 
 Licence
