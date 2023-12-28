@@ -1,6 +1,6 @@
 # William Tchang Portfolio
 
-Bienvenue sur le portfolio en ligne de William Tchang. Ce dépôt contient le code source du site web personnel de William Tchang, mettant en valeur son parcours, ses compétences et ses projets. Vous pouvez explorer le site à l'adresse [william-tchang.fr](https://william-tchang.fr).
+Bienvenue sur mon portfolio en ligne. Ce dépôt contient le code source de mon site web personnel de William Tchang, mettant en valeur mon parcours, mes compétences et mes projets. Vous pouvez explorer le site à l'adresse [william-tchang.fr](https://william-tchang.fr).
 
 ## Structure du Projet
 
