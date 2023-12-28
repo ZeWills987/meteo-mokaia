@@ -11,7 +11,7 @@ Structure du Projet
 
 1. Clonez ce dépôt sur votre machine locale.
 
-````bash
+```bash
     git clone https://github.com/VOTRE-UTILISATEUR/meteo-mokaia.git
 ```
     Ouvrez le fichier index.html dans votre navigateur pour lancer l'application.
