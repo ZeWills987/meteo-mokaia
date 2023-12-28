@@ -9,24 +9,23 @@ Structure du Projet
 
 ## Utilisation
 
-    Clonez ce dépôt sur votre machine locale.
+Clonez ce dépôt sur votre machine locale.
 
-    bash
-
+bash ```
     git clone https://github.com/VOTRE-UTILISATEUR/meteo-mokaia.git
-
-    Ouvrez le fichier index.html dans votre navigateur pour lancer l'application.
+```
+Ouvrez le fichier index.html dans votre navigateur pour lancer l'application.
 
 ## Fonctionnalités
 
-    Recherche de Ville: Saisissez le nom d'une ville dans la barre de recherche et appuyez sur le bouton "Afficher" pour obtenir les informations météorologiques.
+Recherche de Ville: Saisissez le nom d'une ville dans la barre de recherche et appuyez sur le bouton "Afficher" pour obtenir les informations météorologiques.
 
-    Affichage des Informations: Les informations affichées comprennent la température, la météo actuelle, la vitesse du vent, l'humidité, la probabilité de pluie, et des prévisions horaires et journalières.
+Affichage des Informations: Les informations affichées comprennent la température, la météo actuelle, la vitesse du vent, l'humidité, la probabilité de pluie, et des prévisions horaires et journalières.
 
 ## Auteur
 
-    Tchang William
-    Site personnel
+Tchang William
+william-tchang.fr
 
 ## Licence
 
