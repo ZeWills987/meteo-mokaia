@@ -4,8 +4,8 @@ Structure du Projet
 
 - **`/data`**: Ce répertoire contient les données statiques de l'application, telles que les fichiers CSS, JavaScript, et les images.
     - **`/data/css`**: Stylesheets de l'application.
-    -**`/data/img`**: Images utilisées dans l'application.
-    -**`/data/js`**: Scripts JavaScript utilisés pour interagir avec l'API météo.
+    - **`/data/img`**: Images utilisées dans l'application.
+    - **`/data/js`**: Scripts JavaScript utilisés pour interagir avec l'API météo.
 
 ## Utilisation
 
