@@ -15,7 +15,7 @@ Structure du Projet
     git clone https://github.com/VOTRE-UTILISATEUR/meteo-mokaia.git
 ```
 
-2. Créez un compte sur le site [https://www.meteomatics.com/fr/inscription-compte-free-basic-api/](api météo concept)
+2. Créez un compte sur le site ![https://www.meteomatics.com/fr/inscription-compte-free-basic-api/](api météo concept)
 
 3. Ajoutez dans le fichier "weather.js" votre clé api dans la variable "token"; 
 
