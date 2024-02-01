@@ -15,13 +15,17 @@ Structure du Projet
     git clone https://github.com/VOTRE-UTILISATEUR/meteo-mokaia.git
 ```
 
-Ouvrez le fichier index.html dans votre navigateur pour lancer l'application.
+2. Créez un compte sur le site [https://www.meteomatics.com/fr/inscription-compte-free-basic-api/](api météo concept)
+
+3. Ajoutez dans le fichier "weather.js" votre clé api dans la variable "token"; 
+
+4. Ouvrez le fichier index.html dans votre navigateur pour lancer l'application.
 
 ## Fonctionnalités
 
-Recherche de Ville: Saisissez le nom d'une ville dans la barre de recherche et appuyez sur le bouton "Afficher" pour obtenir les informations météorologiques.
+Recherche de Ville : Saisissez le nom d'une ville dans la barre de recherche et appuyez sur le bouton "Afficher" pour obtenir les informations météorologiques.
 
-Affichage des Informations: Les informations affichées comprennent la température, la météo actuelle, la vitesse du vent, l'humidité, la probabilité de pluie, et des prévisions horaires et journalières.
+Affichage des Informations : Les informations affichées comprennent la température, la météo actuelle, la vitesse du vent, l'humidité, la probabilité de pluie, et des prévisions horaires et journalières.
 
 ## Auteur
 
